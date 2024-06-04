@@ -60,8 +60,8 @@ const Login =() => {
            
               
           </div>
-   <h6>use Email : abcd@gmail.com <br/> Password : abcd to login</h6>
-            <h6>if not able to login write me an email on singhjadon.2002@gmail.com</h6>
+   <h6>Use following to login Email : abcd@gmail.com <br/> Password : abcd </h6>
+            <h6>If not able to login write me an email on singhjadon.2002@gmail.com</h6>
           </Form>  
             </Col>
         </Row>
