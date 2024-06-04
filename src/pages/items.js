@@ -86,7 +86,7 @@ const Items = () => {
 const onFinish =(values) =>{
   dispatch({type:"showLoading"})
   if(editingItem===null){
-    axios.post('${apiUrl}/api/items/add-item', values)
+    axios.post(`${apiUrl}/api/items/add-item`, values)
     .then((response)=>{
       dispatch({type:"hideLoading"})
       message.success('Item added successfully')
@@ -97,7 +97,7 @@ const onFinish =(values) =>{
       console.log(error)
     })
   }else{
-    axios.post('${apiUrl}/api/items/edit-item', { ...values, itemId: editingItem._id })
+    axios.post(`${apiUrl}/api/items/edit-item`, { ...values, itemId: editingItem._id })
         .then((response) => {
             dispatch({ type: "hideLoading" });
             message.success('Item edited successfully');
