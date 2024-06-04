@@ -57,10 +57,11 @@ const Login =() => {
           <div className="d-flex justify-content-between align-items-center">
             <Link to='/register' className='m-3'>Not Registered Yet? Click here to Register</Link>
             <Button htmlType='submit' type="primary">Login</Button>
-            <h6>use Email : abcd@gmail.com <br/> Password : abcd to login</h6>
-            <h6>if not able to login write me an email on singhjadon.2002@gmail.com</h6>
+           
               
           </div>
+   <h6>use Email : abcd@gmail.com <br/> Password : abcd to login</h6>
+            <h6>if not able to login write me an email on singhjadon.2002@gmail.com</h6>
           </Form>  
             </Col>
         </Row>
