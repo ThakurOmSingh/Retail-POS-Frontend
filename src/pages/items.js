@@ -34,7 +34,7 @@ const Items = () => {
 
   const deleteItem=(record)=>{
     dispatch({type:"showLoading"})
-    axios.post('http://localhost:5000/api/items/delete-item',{itemId: record._id})
+    axios.post(`${apiUrl}/api/items/delete-item`,{itemId: record._id})
     .then((response)=>{
       dispatch({type:"hideLoading"})
       message.success('Item deleted succesfully')
